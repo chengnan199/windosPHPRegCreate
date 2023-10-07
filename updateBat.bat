@@ -16,7 +16,7 @@ cd /d %dir%
 for /d %%i in (*) do (
       echo %%i
       echo @echo off >> %regedit%\%%i.bat
-      echo set PATH=%dir%%%i;%b%PATH%b% >> %regedit%\%%i.bat
+      echo set PATH=%dir%\%%i;%b%PATH%b% >> %regedit%\%%i.bat
       echo PATH% >> %regedit%\%%i.bat
       echo PHP %%i >> %regedit%\%%i.bat
       echo cmd >> %regedit%\%%i.bat
